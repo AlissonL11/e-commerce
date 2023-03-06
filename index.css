@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');  /* fonte raleway */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body header{
+    background-color: black;
+    height: 157px;
+}
+    body header img{
+        margin-left: 56px;
+        margin-top: 27px;
+    }
+    body section h1{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
+        height: 47px;
+        
+        color: #000000;
+        text-align: center;
+        margin-top: 7rem;
+    }
+    body section h2{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+
+        color: #000000;
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+
+/* FORMULÁRIO */
+    
+form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+    form label {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+
+        color: #000000;
+        margin-bottom: 15px;
+    }
+    form input{
+        padding: 11px 13px;
+        gap: 8px;
+        height: 30px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 2px solid #7A7A7A;
+        border-radius: 10px;
+    }
+    form span{
+        color: red;
+        font-family: 'Raleway';
+        font-style: bold;
+        font-weight: 800;
+        font-size: 12px;
+        text-align: right;
+        margin-bottom: 0vh;
+        content: "*Campo Obrigatório";
+        visibility: hidden;
+    }
+    form button {
+        padding: 20px 36px;
+        gap: 8px;        
+        height: 48px;
+        background: #0C70F2;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 21px;
+
+        color: #FFFFFF;
+        cursor: pointer;
+        margin-top: 3rem;
+    }
+    form button:hover {
+        background-color: #023679;
+        transition: 0.3s ease-in-out;  
+    }
+    form button:active {
+        transform: translateY(10px);
+    }
+    form span {
+        margin-top: 0.3rem;
+    }
