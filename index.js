@@ -4,8 +4,6 @@ const erroPassword = document.getElementById("erroPassword");       //
 const sucess = document.getElementById("sucess");                   //pegando as mensagens de erro pelo id
 
 
-
-
 const nome = document.getElementById("name");               //pegando os inputs pelo id
                 
 const senha = document.getElementById("password");          //pegando os inputs pelo id
@@ -18,19 +16,23 @@ form.addEventListener('submit', function(event){        //adicionando um "escuta
 
     //inicio da condicional (se o input estiver vazio, que apareça a mensagem de erro; do contrário, esconda a mensagem de erro)
     if(nome.value===''){
-        erroNome.style.visibility = 'visible'
-        erroNome.style.fontFamily = 'Raleway'
-        erroNome.textContent = erroMsg
+        erroNome.style.visibility = 'visible';
+        erroNome.style.fontFamily = 'Raleway';
+        erroNome.textContent = erroMsg;
+        nome.style.border = "2px solid red";
     }else{
         erroNome.style.visibility = 'hidden'
+        nome.style.border = "2px solid #7A7A7A";
     };
 
     if(senha.value===''){
         erroPassword.style.visibility = 'visible'
         erroPassword.style.fontFamily = 'Raleway'
         erroPassword.textContent = erroMsg
+        senha.style.border = "2px solid red";
     }else{
         erroPassword.style.visibility = 'hidden'
+        senha.style.border = "2px solid #7A7A7A";
     }; 
 
     //abaixo a condicional da mensagem de sucesso (se todos os inputs estiverem com algum valor, mostre a mensagem de sucesso e oculte os erros, do contrário, oculte a mensagem de sucesso.)
